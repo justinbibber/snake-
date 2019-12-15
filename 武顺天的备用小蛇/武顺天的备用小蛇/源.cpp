@@ -45,10 +45,10 @@ void wall();//检测撞墙
 void enternext();//下一关
 void gameover();//游戏结束
 //图片的定义
-IMAGE Plot1, Plot2;
+IMAGE Plot1, Plot2, Plot3, Plot4, Plot5, Plot6, Plot7, Plot8, Plot9, Plot10, Plot11;
 IMAGE snake1, background1, background2;
 IMAGE mine0;
-IMAGE seed0;
+IMAGE seed0,seed2,seed3,seed4,seed5,seed6;
 
 //结构体的定义
 typedef struct food {
@@ -89,30 +89,184 @@ int c = 0;
 
 //***图片的引用
 void ImageLoading() {
-	loadimage(&Plot1, _T("1fen.jpg"));
-	loadimage(&Plot2, _T("小人3.png"));
-	loadimage(&background1, _T("草地.png"));
+	loadimage(&Plot1, _T("酸了.jpg"));
+	loadimage(&Plot2, _T("放弃.jpg"));
+	loadimage(&Plot3, _T("结局1.png"));
+	loadimage(&Plot4, _T("剧情1.png"));
+	loadimage(&Plot5, _T("他.jpg"));
+	loadimage(&Plot6, _T("她.jpg"));
+	loadimage(&Plot7, _T("他1.jpg"));
+	loadimage(&Plot8,_T("求救.png"));
+	loadimage(&Plot9, _T("求救1.png"));
+	loadimage(&Plot10, _T("开始2.png"));
+	loadimage(&Plot11, _T("选关.png"));
+	loadimage(&background1, _T("开始0.png"));
 	loadimage(&background2, _T("笑脸.png"));
 	loadimage(&mine0, _T("地雷3.png"));
-	loadimage(&seed0, _T("火花2.png"));
+	loadimage(&seed0, _T("火花1.png"));
+	loadimage(&seed2, _T("火花2.png"));
+	loadimage(&seed3, _T("火花3.png"));
+	loadimage(&seed4, _T("火花4.png"));
+	loadimage(&seed5, _T("火花5.png"));
+	loadimage(&seed6, _T("火花6.png"));
 	loadimage(&snake1, _T("可爱的开始1.png"));
 }
 
 //***起始界面需打磨！！！
 void  Newgame() {
-	initgraph(width, longth, SHOWCONSOLE);
+	int n;
+	initgraph(1000, 600, SHOWCONSOLE);
+	putimage(0, 0, &background1);
+	settextcolor(BLACK);
+	settextstyle(50, 0, L"楷体");
+	setbkmode(TRANSPARENT);
+	outtextxy(0, 200, L"请用鼠标点击1或2或3");
+	outtextxy(0, 270, L"1.是");
+	outtextxy(0, 320, L"2.否");
+	outtextxy(0, 370, L"3.跳过");
+	
+	setfillcolor(RGB(61, 225, 174));//调色板****修改！！！
+	HRGN rgn_r = CreateRectRgn(600, 0, 1000, 600);
+	setcliprgn(rgn_r);
+	DeleteObject(rgn_r);
+	solidrectangle(600, 0, 1000, 600);
+	settextcolor(BLACK);
+	settextstyle(25, 0, L"楷体");
+	setbkmode(TRANSPARENT);
+	outtextxy(750, 40, L"贪吃蛇");
+	settextstyle(15, 0, L"宋体");
+	RECT rect = { 750,100,950,450 };
+	drawtext(_T("【游戏说明】\n\nwasd键：控制方向\n\
+					F5    ：重新开始\nesc键 ：退出游戏\
+					"), &rect, DT_WORDBREAK);
+	MOUSEMSG m,m1;
+	while (1)
+	{
+		m = GetMouseMsg();
+		if (m.mkLButton) {
+			if (m.x >= 0 && m.x <= 200 && m.y >= 279 && m.y <= 325) {
+				initgraph(600, 600, SHOWCONSOLE);
+					putimage(0, 0, &Plot1);
+				while (1)
+				{
+					
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot2);
+				while (1)  
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot3);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				break;
+			}
+			else if (m.x >=0 && m.x <=200 && m.y>=330 && m.y < 380) {
+				initgraph(600, 600, SHOWCONSOLE);
+				putimage(0, 0, &Plot4);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot5);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot6);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot7);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot8);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot9);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				putimage(0, 0, &Plot10);
+				while (1)
+				{
+					m1 = GetMouseMsg();
+					if (m1.mkLButton)
+						break;
+				}
+				break;
+			}
+			else 	if (m.x >= 0 && m.x <= 200 && m.y >= 380 && m.y < 450)
+				break;
+		}
+	}
+	initgraph(600, 600, SHOWCONSOLE);
+	putimage(0, 0, &Plot11);
+	settextcolor(BLACK);
+	settextstyle(25, 0, L"楷体");
+	setbkmode(TRANSPARENT);
+	outtextxy(400, 200, L"武顺天的聪明蛇");
+	outtextxy(400, 230, L"1.普通模式");
+	outtextxy(400, 260, L"2.困难模式");
+	outtextxy(400, 290, L"3.嘿嘿嘿");
+	outtextxy(400, 320, L"请选择 1 2 3:");
+	while (1)
+	{
+		m = GetMouseMsg();
+		if (m.mkLButton)
+		{
+			if (m.x >= 400 && m.x <= 500 && m.y >= 200 && m.y <= 225)
+				;
+			else if (m.x >= 400 && m.x <= 500 && m.y >= 230 && m.y <= 255)
+				;
+			else if (m.x >= 400 && m.x <= 500 && m.y >= 260 && m.y <= 285)
+				;
+
+			break;
+		}
+			
+	}
+	initgraph(1000, 550, SHOWCONSOLE);
+		_getch();
+		creatmap();
+	/*
 	putimage(0, 0, &snake1);
 	settextcolor(BLACK);
 	settextstyle(25, 0, L"楷体");
-/*	setbkmode(TRANSPARENT);
+	setbkmode(TRANSPARENT);
 	outtextxy(400, 200, L"武顺天的聪明蛇");
 	outtextxy(400, 230, L"1.开始游戏");
 	outtextxy(400, 260, L"2.游戏说明");
 	outtextxy(400, 290, L"3.退出游戏");
-	outtextxy(400, 320, L"请选择 1 2 3:");*/
-	_getch();
-	creatmap();
-	/*	int n;
+	outtextxy(400, 320, L"请选择 1 2 3:");
+		int n;
 		scanf("%d", &n);
 
 		switch(n) {
@@ -122,8 +276,8 @@ void  Newgame() {
 
 		case 3:
 
-		}*/
-		/*	setfillcolor(CYAN);
+		}
+		setfillcolor(CYAN);
 		HRGN rgn_r = CreateRectRgn(700, 0, 1000,550);
 		setcliprgn(rgn_r);
 		DeleteObject(rgn_r);
@@ -162,6 +316,7 @@ void  Newgame() {
 			i += 10;
 		}*/
 }
+
 //创造地图
 void creatmap() {
 	cleardevice();
@@ -241,7 +396,7 @@ void  movesnake() {
 		speedup(); //创建食物
 		creatfood();
 	}
-	else if (q->x == seed1->x&&q->y == seed1->y)//说明吃到毒草了
+	else if (q->x == seed1->x&&q->y == seed1->y)//说明吃到炸弹了
 	{
 		halfsnake();		
 		}
@@ -285,7 +440,7 @@ void  movesnake() {
 		speedup();
 		creatfood();//创建食物
 	}
-	else if (q->x == seed1->x&&q->y == seed1->y)//说明吃到毒草了
+	else if (q->x == seed1->x&&q->y == seed1->y)//说明吃到炸弹了
 	{
 		halfsnake();
 	}
@@ -328,7 +483,7 @@ void  movesnake() {
 		speedup();
 		creatfood();//创建食物
 	}
-	else if (q->x == seed1->x&&q->y == seed1->y)//说明吃到毒草了
+	else if (q->x == seed1->x&&q->y == seed1->y)//说明吃到炸弹了
 	{
 		halfsnake();
 		}
@@ -371,7 +526,7 @@ void  movesnake() {
 					speedup();
 		creatfood();//创建食物
 	}
-	else if(q->x == seed1->x&&q->y == seed1->y)//说明吃到毒草了
+	else if(q->x == seed1->x&&q->y == seed1->y)//说明吃到炸弹了
 	{
 		halfsnake();
 		}
@@ -446,6 +601,7 @@ void keyboardcontrol() {
 		{
 			break;
 		}
+		seedss();
 		movesnake();
 	}
 }
@@ -456,11 +612,11 @@ void creatfood() {
 	p = head;
 	srand((unsigned)time(NULL));
 	food1 = (food*)malloc(sizeof(food));
-	food1->x = rand() % 990;
-	food1->y = rand() % 540;
+	food1->x = rand() % 980+10;
+	food1->y = rand() % 530+10;
 	while (food1->x % 10 != 0 || food1->y % 10 != 0) {
-		food1->x = rand() % 990;
-		food1->y = rand() % 540;
+		food1->x = rand() % 980+10;
+		food1->y = rand() % 530+10;
 	}
 	while (p->next == NULL) {
 		if (p->x == food1->x && p->y == food1->y) //判断蛇身是否与食物重合   
@@ -624,9 +780,21 @@ void clearseed() {
 	solidrectangle(p->x, p->y, p->x + 20, p->y + 20);
 	creatmine();
 }
-
+//毒草闪烁
 void seedss() {
-
+	srand((unsigned)time(NULL));
+	if (rand() % 6 == 0)
+		putimage(mine1->x, mine1->y, &seed0);
+	else if (rand() % 6 == 1)
+		putimage(mine1->x, mine1->y, &seed2);
+	else if (rand() % 6 == 2)
+		putimage(mine1->x, mine1->y, &seed3);
+	else if (rand() % 6 == 3)
+		putimage(mine1->x, mine1->y, &seed4);
+	else if (rand() % 6 == 4)
+		putimage(mine1->x, mine1->y, &seed5);
+	else if (rand() % 6 == 5)
+		putimage(mine1->x, mine1->y, &seed6);
 }
 
 
@@ -665,7 +833,9 @@ void gameover() {
 	outtextxy(280, 140, L"\--\--\--\--\--\--|--/--/--/");
 	outtextxy(300, 160, L"(_)");
 	outtextxy(300, 180, L"(oOOo)");
-	if (gamestatues == 1)
+	if (gamestatues == 0)
+		;
+	else if (gamestatues == 1)
 		eatitself();
 	else if (gamestatues == 2)
 		wall();
