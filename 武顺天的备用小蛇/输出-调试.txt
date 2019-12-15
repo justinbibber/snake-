@@ -1,0 +1,53 @@
+﻿“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Users\Lenovo\Desktop\武顺天的备用小蛇\Debug\武顺天的备用小蛇.exe”。已加载符号。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\ntdll.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\kernel32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\KernelBase.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\user32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\win32u.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\gdi32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\gdi32full.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\msvcp_win.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\ucrtbase.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\shell32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\cfgmgr32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\SHCore.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\vcruntime140d.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\ucrtbased.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\msvcrt.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\rpcrt4.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\sspicli.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\cryptbase.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\bcryptprimitives.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\sechost.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\combase.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\windows.storage.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\advapi32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\profapi.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\powrprof.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\umpdc.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\shlwapi.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\kernel.appcore.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\cryptsp.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\ole32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\imm32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\uxtheme.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.476_none_5f5cdad7821dc869\GdiPlus.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\msctf.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\oleaut32.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\WindowsCodecs.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\TextInputFramework.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\CoreUIComponents.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\CoreMessaging.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\ntmarta.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\WinTypes.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\WinTypes.dll”。无法查找或打开 PDB 文件。
+“武顺天的备用小蛇.exe”(Win32): 已卸载“C:\Windows\SysWOW64\WinTypes.dll”
+“武顺天的备用小蛇.exe”(Win32): 已加载“C:\Windows\SysWOW64\iertutil.dll”。无法查找或打开 PDB 文件。
+线程 0x486d4 已退出，返回值为 1 (0x1)。
+线程 0x47160 已退出，返回值为 0 (0x0)。
+线程 0x30ca8 已退出，返回值为 0 (0x0)。
+线程 0x44654 已退出，返回值为 0 (0x0)。
+线程 0x47044 已退出，返回值为 0 (0x0)。
+线程 0x455b4 已退出，返回值为 0 (0x0)。
+线程 0x49b00 已退出，返回值为 0 (0x0)。
+程序“[284000] 武顺天的备用小蛇.exe”已退出，返回值为 0 (0x0)。
